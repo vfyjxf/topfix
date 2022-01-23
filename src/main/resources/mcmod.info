@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "topfix",
+    "name": "Top Fix",
+    "description": "fix top in server only show english",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "vfyjxf_"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "vfyjxf.topfix.mixins",
+  "minVersion": "0.7.11",
+  "priority": 0,
+  "mixins": [
+    "top.MixinChestInfoTools",
+    "top.MixinDefaultProbeInfoProvider",
+    "topaddons.MixinAddonForge"
+  ],
+  "client": [
+    "topaddons.MixinElementTankGauge"
+  ]
+}
