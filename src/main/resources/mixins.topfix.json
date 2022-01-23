@@ -1,5 +1,5 @@
 {
-  "required": true,
+  "required": false,
   "compatibilityLevel": "JAVA_8",
   "package": "vfyjxf.topfix.mixins",
   "minVersion": "0.7.11",
