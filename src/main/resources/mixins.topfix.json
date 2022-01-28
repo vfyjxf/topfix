@@ -2,7 +2,7 @@
   "required": false,
   "compatibilityLevel": "JAVA_8",
   "package": "vfyjxf.topfix.mixins",
-  "minVersion": "0.7.11",
+  "minVersion": "0.8.3",
   "priority": 0,
   "mixins": [
     "top.MixinChestInfoTools",

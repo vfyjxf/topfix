@@ -20,7 +20,7 @@ apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: 'org.spongepowered.mixin'
 
 group = 'topfix'
-version = '1.0'
+version = '1.1'
 archivesBaseName = 'topfix'
 
 minecraft {
@@ -60,16 +60,8 @@ dependencies {
 
     deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.28-17"
     compile "curse.maven:top-addons-247111:2887479"
+    deobfCompile "curse.maven:mixin-booter-419286:3321174"
 
-    shade ('org.spongepowered:mixin:0.7.11-SNAPSHOT') {
-        exclude module: "asm-commons"
-        exclude module: "asm-tree"
-        exclude module: "launchwrapper"
-        exclude module: "guava"
-        exclude module: "log4j-core"
-        exclude module: "gson"
-        exclude module: "commons-io"
-    }
 }
 
 
@@ -95,21 +87,3 @@ mixin {
     add sourceSets.main, "mixins.topfix.refmap.json"
 }
 
-jar {
-
-    configurations.shade.each { dep ->
-        from(project.zipTree(dep)){
-            exclude 'META-INF', 'META-INF/**'
-        }
-        from(project.zipTree(dep)){
-            include 'META-INF/services', 'META-INF/services/**'
-        }
-    }
-    manifest {
-        attributes([
-                'TweakClass': 'org.spongepowered.asm.launch.MixinTweaker',
-                "FMLCorePlugin": "vfyjxf.topfix.TopFixLoadingPlugin",
-                "FMLCorePluginContainsFMLMod": true,
-        ])
-    }
-}
