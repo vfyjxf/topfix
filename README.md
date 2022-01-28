@@ -1,5 +1,6 @@
 # TOP Fix
-A simple mod to fix some problems in TheOneProbe
+A simple mod to fix some problems in TheOneProbe.
+It requires [MixinBooter](https://www.curseforge.com/minecraft/mc-mods/mixin-booter)
 
 ## Fixed Problems
  
